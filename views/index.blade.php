@@ -12,7 +12,7 @@
                     @foreach(parent_recursive(get_categories_feature()) as $category)
                     <div class="w-1/4 xl:w-1/6 p-1 lg:p-4 hover:shadow-xl text-center">
                         <a href="{!! route(ROUTE_PRODUCT_CATEGORY_SCREEN_NAME, ['slug'=> $category->slug]) !!}" class="inline-block w-full">
-                            <img src="{{ TnMedia::url(empty($category->image) ? asset('/images/no-image.jpg') : $category->image) }}" class="w-full block m-auto rounded-full lg:p-4">
+                            <img src="{{ TnMedia::getImageUrl($category->image, 'medium', asset('/images/no-image.jpg')) }}" class="w-full block m-auto rounded-full lg:p-4">
                             <div class="text-gray-600 font-bold line-clamp-2 text-xs md:text-base">{{ $category->name }}</div>
                         </a>
                     </div>
