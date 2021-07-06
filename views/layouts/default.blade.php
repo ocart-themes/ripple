@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-pjax-version" content="{{ mix('themes/ripple/css/style.css') }}">
+    <meta http-equiv="x-pjax-version" content="{{ asset('themes/ripple/css/style.css') }}">
 
     <link rel="icon" type="image/png" href="{{ get_favicon() }}">
 
